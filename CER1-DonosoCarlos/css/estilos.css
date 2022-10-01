@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    font-family: TradeGothicLTStd, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fafafa;
+}
+
+#menu, #menu2, #menu3, #menu4{
+    background-color: cornsilk;;
+    margin: 0;
+}
+
+
+.slide img{
+    height: 93vh;
+}
+.seccion-about{
+    background-color: #fafafa;
+    color: #000;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.seccion-about article p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+#about{
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    position: static;
+    background-color: cornsilk;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.seccion-about article p {
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+footer{
+    margin: 0;
+    width: 100%;
+    height: 21vh;
+    background-color: gray;
+}
+
+#logo {
+    background-image: url('../img/Mi\ proyecto.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-top {
+    background-color: gray;
+    margin: 0;
+}
+
+.bg-restaurant {
+    background-color: gray;
+    margin: 0;
+}
+
+#social {
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+#social ul {
+    list-style-type: none;
+}
+
+#social ul li {
+    float: center;    
+}
+
+
+#social ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    border: 2px solid #FFF;
+    background-color: #FFF;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+#social ul li a:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #FFF;
+}
+
+.footerinfo, .cuentainfo {
+    display: block;
+    margin-top: 10px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.card{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+    align-items: initial;
+}
+
+.card img{
+    height: 30vh;
+}
+
+.seccion-menu{
+    color: #FFF;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+    background-image: url(../img/carousel1.jpg);
+
+}
+
+.seccion-menu article p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.seccion-menu article p {
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.contenedores{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    display: flex;
+    width: 95%;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.textoContenedor{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+    flex: none;
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+    transition: border .2s ease;
+}
+
+#subtitulo{
+    font-family: 'interstate', sans-serif;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#informacion{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container-fluid{
+    padding:0 ;
+    margin: 0;
+}
+
+.contenedorPequeño{
+    margin: 0 auto;
+    padding: 0 calc(20px + env(safe-area-inset-left));
+    max-width: 600px;
+}
+
+.info{
+    padding: 40px 0 80px;
+}
+
+#titulo{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.accordion-item{
+    text-align: center;
+}
+
+
+
+
