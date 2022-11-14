@@ -1,0 +1,53 @@
+{%  extends 'core/base.html' %}
+
+{% block title %} Porteria {% endblock %}
+
+
+{% block content %}
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-3">
+                <form class="navbar-search" method="GET">
+                    <h6>Filtrar por residencia</h6>
+                    <div class="input-group">
+                        <input type="number" class="form-control bg-light border-0 small" placeholder="Buscar..." name="buscar" value="">
+                        <div class="input group-append">
+                            <button class="btn btn-primary" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 20 20">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Listado de Correspondencias</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Correspondencia</th>
+                                <th>Estado</th>
+                                <th>Residencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for c in correspondencias %}
+                            <tr>
+                                <td>{{forloop.counter}}</td>
+                                <td>{{c.tipo}}</td>
+                                <td>{{c.estado}}</td>
+                                <td>{{c.residencia}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

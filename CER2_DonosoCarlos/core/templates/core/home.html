@@ -1,0 +1,46 @@
+{%  extends 'core/base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'core/img/conserjeria.jpg' %}" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Bienvenido Vecino/a</h1>
+          <p>En esta página web tendras acceso a la información de tu comunidad</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'core/img/paqueteria.png' %}" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Responsabilidad</h1>
+          <p>En conserjeria nos aseguramos de recibir y entregar correspondencias en el mejor estado a los residentes</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'core/img/Seguridad.png' %}" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Seguridad</h1>
+          <p>Nos encargamos de prevenir cualquier inconveniente dentro de la comunidad</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.table-striped{
+    background-color: lightgrey;
+}
+
+thead{
+    background-color: whitesmoke;
+}
+
+body{
+    background-color: lightslategrey;
+}
+
+.navbar-search{
+    margin-top: 5vh;
+    padding-right: 10vh;
+}
+
+h2,h6,td,tr{
+    text-align: center;
+}
+
+.carousel-item{
+    height: 92.5vh;
+}
+
+
+.d-block{
+    width: 100vw;
+    height: 100vh;
+}
